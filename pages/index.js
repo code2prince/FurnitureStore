@@ -1,6 +1,9 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Header from '@components/header/Header'
+import Footer from '@components/footer/Footer'
+import Contact from '@components/contact/Contact'
+import About from '@components/about/About'
+import Cart from '@components/cart/Cart'
 
 export default function Home() {
   return (
@@ -12,9 +15,12 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to my app!" />
+        <Cart/>
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <About/>
+        <Contact/>
       </main>
 
       <Footer />
