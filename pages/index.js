@@ -1,4 +1,5 @@
-import Head from 'next/head'
+
+import HeadMeta from '@components/headMeta/HeadMeta'; 
 import Header from '@components/header/Header'
 import Footer from '@components/footer/Footer'
 import Contact from '@components/contact/Contact'
@@ -8,10 +9,7 @@ import Cart from '@components/cart/Cart'
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadMeta pageTitle="home page"/>
 
       <main>
         <Header title="Welcome to my app!" />
