@@ -3,18 +3,13 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { FaSearch } from 'react-icons/fa';
 import { FcHome } from 'react-icons/fc';
-//  import Image from '../../public/src';
-//import Image from 'next/image';
- import logofurniture2 from '../../public/src/logofurniture2.jpg';
 
 export default function Header() {
   return (
     <div className={styles.header}>
-      <div className={styles.logoBox}>Image
+      <div className={styles.logoBox}>
         <div>
-        {/* <img src="logofurniture2" alt="Logo" className={styles.logo} />
-          Image<Image src="/logofurniture2.jpg"/> */}
-          <img src="/logofurniture2.jpg"/>
+          <img className={styles.logo} src="/logofurniture2.jpg" alt="img"/>
         </div>
 
         <div><h3>A to Z Stores</h3></div>
